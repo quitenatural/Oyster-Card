@@ -1,0 +1,30 @@
+@startuml
+
+class Users {
+id
+firstName
+lastName
+}
+
+class JourneyData {
+id
+User
+date
+transportMode
+from
+to
+}
+
+class StationZones {
+station
+zone
+}
+
+class Fares {
+journey
+fare
+}
+
+Users <|-- JourneyData
+
+@enduml
